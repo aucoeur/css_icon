@@ -1,4 +1,4 @@
-body, html {
+body {
     height: 100%;
     margin: 20px;
     font-family: 'Roboto', sans-serif;
@@ -8,7 +8,7 @@ body, html {
 
 .main {
     height: 400px;
-    width: 50%;
+    width: 300px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -16,12 +16,14 @@ body, html {
 }
 
 .box {
+    position: absolute;
     width: 200px;
     height: 200px;
     border: 12px solid black;
     border-radius: 10%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     z-index: 100;
+    transform: translate(-15px, 0px);
 }
 
 .spool {
@@ -33,7 +35,7 @@ body, html {
     border-right: 5px solid black;
     border-bottom: 5px solid  hsl(0, 0%, 85%);;
     background-color: orangered;
-    transform: translate(135px, 5px)
+    transform: translate(120px, 5px)
 }
 
 .inner {
